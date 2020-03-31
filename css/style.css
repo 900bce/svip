@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "PingFang SC", "Helvetica Neue", "Helvetica", tahoma, arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  max-width: 144rem;
+  height: 100vh;
+  margin: 0 auto;
+  background-image: url('../img/background-large.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+}
+
+.lady {
+  position: absolute;
+  left: -3rem;
+  top: 10rem;
+  z-index: 100;
+  width: 23%;
+  height: auto;
+}
+
+.container-inside {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 90rem;
+}
+
+.heading-primary {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.heading-secondary {
+  background: url('../img/heading-secondary-large.png');
+  background-size: cover;
+  background-position: center;
+  height: 3rem;
+  width: 99%;
+  margin-top: 1.5rem;
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  height: 47rem;
+  position: relative;
+  background: url('../img/content-background.png');
+  background-position: center;
+  background-size: 95% 81%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.content-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46rem;
+  z-index: -1;
+}
+
+.logo {
+  width: 28%;
+  margin-top: 5.5rem;
+}
+
+.main-content {
+  font-size: 2.3rem;
+  padding: 0 3rem;
+}
+
+.link-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem auto;
+  max-width: 70rem;
+  height: 5rem;
+}
+
+.link {
+  color: rgb(254, 255, 168);
+  text-align: center;
+  border: 2px solid rgba(254, 255, 168);
+  border-radius: 1px;
+  flex: 2;
+  margin: 0 1rem;
+  margin-top: 3px;
+  height: 4rem;
+  letter-spacing: 3px;
+  line-height: 4rem;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-red {
+  color: #f00;
+}
+
+.btn {
+  flex: 1;
+  border: none;
+  font-size: 2rem;
+  height: 4rem;
+  margin: 0 .5rem;
+}
+
+.copy-link-btn {
+  background: url('../img/yellow-btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(141, 29, 29);
+}
+
+.bookmark-link-btn {
+  background: url('../img/red-btn.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.copyright {
+  width: 30%;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: none;
+}
+
+.popup-content {
+  width: 60rem;
+  height: 65rem;
+  background: url(../img/popup.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 5;
+}
+
+.popup-url {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 3rem;
+  color: red;
+}
+
+.close-btn,
+.open-btn {
+  position: absolute;
+  bottom: 5rem;
+  height: 5rem;
+  width: 20rem;
+  z-index: 500;
+}
+
+.close-btn {
+  left: 5rem;
+}
+
+.open-btn {
+  right: 5rem;
+}
+
+.close-btn,
+.open-btn:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .lady {
+    left: -5rem;
+    top: 15rem;
+  }
+} 
+
+@media only screen and (max-width: 1023px) {
+  .lady {
+    left: -10rem;
+    top: 18rem;
+  }
+} 
+
+@media only screen and (max-width: 767px) {
+  .lady {
+    display: none;
+  }
+} 
+
+@media only screen and (max-width: 480px) {
+  .heading-primary {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .heading-secondary {
+    background: url('../img/heading-secondary-small.png');
+    background-size: cover;
+    background-position: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .main {
+    height: 47rem;
+    background-size: 95% 83%;
+  }
+
+  .content-frame {
+    height: 46rem;
+  }
+
+  .main-content {
+    padding: 1.2rem;
+    padding-top: 0;
+  }
+
+  .link-row  {
+    margin: 1rem auto;
+  }
+
+  .link {
+    font-size: 1.6rem;
+    margin: 0 .5rem;
+    height: 3.8rem;
+    line-height: 3.8rem;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  .copyright {
+    width: 45%;
+  }
+}
