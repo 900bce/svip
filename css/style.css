@@ -136,22 +136,12 @@ body {
   color: rgb(141, 29, 29);
 }
 
-.copy-link-btn:hover {
-  cursor: pointer;
-  background-image: url('../img/yellow-btn-large-hover.png');
-}
-
 .bookmark-link-btn {
   background: url('../img/red-btn-large.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
-}
-
-.bookmark-link-btn:hover {
-  cursor: pointer;
-  background-image: url('../img/red-btn-large-hover.png');
 }
 
 .copyright {
