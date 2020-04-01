@@ -225,29 +225,36 @@ body {
   }
 
   .lady {
-    width: 30rem;
+    width: 22%;
     top: 15rem;
+    left: -10rem;
   }
 
   .main {
     width: 100%;
-    height: 54rem;
+    height: 60rem;
     background-size: 97% 84%;
   }
 
   .content-frame {
-    height: 54rem;
+    height: 60rem;
     margin-top: -.3rem;
   }
 
   .link-row {
-    max-width: 95%;
-    margin-bottom: 1rem;
+    max-width: 85%;
+    margin: 1rem auto;
+    height: 6rem;
   }
 
   .link {
-    font-size: 3rem;
-    height: 4.5rem;
+    font-size: 3.2rem;
+    height: 5rem;
+    line-height: 5rem;
+  }
+
+  .btn {
+    height: 5rem;
   }
 
   .copyright {
