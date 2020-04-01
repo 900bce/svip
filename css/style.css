@@ -262,8 +262,8 @@ body {
   }
 
   .popup-content {
-    width: 60rem;
-    height: 65rem;
+    width: 50rem;
+    height: 54rem;
   }
 
   .popup-url {
@@ -272,17 +272,17 @@ body {
 
   .close-btn,
   .open-btn {
-    bottom: 5rem;
+    bottom: 4rem;
     height: 5rem;
-    width: 20rem;
+    width: 16rem;
   }
 
   .close-btn {
-    left: 5rem;
+    left: 4.5rem;
   }
 
   .open-btn {
-    right: 5rem;
+    right: 4.5rem;
   }
 
 }
