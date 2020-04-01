@@ -15,7 +15,7 @@ body {
 
 .container {
   max-width: 144rem;
-  max-height: 96rem;
+  min-height: 100vh;
   margin: 0 auto;
   background-image: url('../img/background-large.png');
   background-size: cover;
@@ -58,7 +58,7 @@ body {
 .main {
   margin: 0 auto;
   width: 100%;
-  height: 47rem;
+  /* height: 50%; */
   position: relative;
   background: url('../img/content-background.png');
   background-position: center;
@@ -91,7 +91,6 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: .5rem auto;
-  max-width: 70rem;
   height: 5rem;
 }
 
@@ -143,6 +142,7 @@ body {
 
 .copyright {
   width: 30%;
+  margin-top: 8rem;
 }
 
 .popup {
@@ -157,8 +157,8 @@ body {
 }
 
 .popup-content {
-  width: 60rem;
-  height: 65rem;
+  width: 45rem;
+  height: 48rem;
   background: url(../img/popup.png);
   background-position: center;
   background-size: cover;
@@ -176,30 +176,68 @@ body {
   top: 18%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: red;
 }
 
 .close-btn,
 .open-btn {
   position: absolute;
-  bottom: 5rem;
-  height: 5rem;
-  width: 20rem;
+  bottom: 3.5rem;
+  height: 4.5rem;
+  width: 15rem;
   z-index: 500;
 }
 
 .close-btn {
-  left: 5rem;
+  left: 4rem;
 }
 
 .open-btn {
-  right: 5rem;
+  right: 4rem;
 }
 
 .close-btn,
 .open-btn:hover {
   cursor: pointer;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .container-inside {
+    max-width: 70%;
+  }
+
+  .heading-primary{
+    margin-top: 10rem;
+  }
+
+  .heading-secondary {
+    height: 4rem; 
+  }
+
+  .lady {
+    left: -6rem;
+    top: 20rem;
+  }
+
+  .content-frame {
+    height: 115%;
+  }
+
+  .main {
+
+  }
+
+  .link-row {
+
+  }
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -268,10 +306,6 @@ body {
   .main {
     height: 47rem;
     background-size: 95% 83%;
-  }
-
-  .content-frame {
-    height: 46rem;
   }
 
   .main-content {
