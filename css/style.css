@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: black;
 }
 
 .container {
@@ -109,11 +109,11 @@ body {
 }
 
 .color-white {
-  color: #ffffff;
+  color: white;
 }
 
 .color-red {
-  color: #ff0000;
+  color: red;
 }
 
 .btn {
@@ -139,7 +139,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
 }
 
 .copyright {
