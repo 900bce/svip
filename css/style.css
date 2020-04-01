@@ -96,9 +96,9 @@ body {
 }
 
 .link {
-  color: rgb(254, 255, 168);
+  color: #feffa8;
   text-align: center;
-  border: 2px solid rgba(254, 255, 168);
+  border: 2px solid #feffa8;
   border-radius: 1px;
   flex: 2;
   margin: 0 1rem;
@@ -109,11 +109,11 @@ body {
 }
 
 .color-white {
-  color: #fff;
+  color: #ffffff;
 }
 
 .color-red {
-  color: #f00;
+  color: #ff0000;
 }
 
 .btn {
@@ -132,7 +132,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: rgb(141, 29, 29);
 }
 
 .bookmark-link-btn {
