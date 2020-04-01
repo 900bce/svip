@@ -2,31 +2,28 @@ $(function () {
   $('.copy-link-btn').click(function() {
     $(this).attr('url')
     $('.popup-url').html($(this).attr('url'))
-    $(".open-link").attr("href", 'http://' + $(this).attr("url"))
+    // $(".open-link").attr("href", 'http://' + $(this).attr("url"))
     $('.popup').show()
   })
 
   $(".bookmark-link-btn").click(function () {
-    // if (document.all) {
-    //   window.external.addFavorite($(this).attr('url'));
-    // } else if (window.sidebar) {
-    //   this.href = $(this).attr('url');
-    //   this.rel = "sidebar";
-    // } else {
-    //   alert('浏览器不支持加入收藏');
-    //   return false();
-    // }
     console.log($(this).attr('url'))
     if (document.all) {
       try {
         window.external.addFavorite($(this).attr('url'), '开元棋牌SVIP版');
       } catch (e) {
-        alert('浏览器不支持加入收藏');
+        const errorMessage = window.screen.width < 480 ? 
+          '抱歉，您所使用的浏览器无法完成此操作。\n请您手动添加收藏' : 
+          '抱歉，您所使用的浏览器无法完成此操作。\n加入收藏失败，请使用Ctrl + D进行添加';
+        alert(errorMessage);
       }
     } else if (window.sidebar) {
       window.sidebar.addPanel('开元棋牌SVIP版', $(this).attr('url'), "");
     } else {
-      alert('浏览器不支持加入收藏');
+      const errorMessage = window.screen.width < 480 ?
+        '抱歉，您所使用的浏览器无法完成此操作。\n请您手动添加收藏' :
+        '抱歉，您所使用的浏览器无法完成此操作。\n加入收藏失败，请使用Ctrl + D进行添加';
+      alert(errorMessage);
     }
   });
 
