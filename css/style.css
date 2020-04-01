@@ -15,7 +15,7 @@ body {
 
 .container {
   max-width: 144rem;
-  max-height: 96rem;
+  min-height: 100vh;
   margin: 0 auto;
   background-image: url('../img/background-large.png');
   background-size: cover;
@@ -207,6 +207,9 @@ body {
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: 95%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
   }
 
   .container-inside {
@@ -237,6 +240,10 @@ body {
 
   .link-row {
     max-width: 80rem;
+  }
+
+  .copyright {
+    margin-top: 10rem;
   }
 }
 
