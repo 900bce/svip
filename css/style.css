@@ -202,17 +202,55 @@ body {
   cursor: pointer;
 }
 
+
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .container-inside {
+    max-width: 70%;
+  }
+
+  .heading-primary {
+    margin-top: 10rem;
+  }
+
+  .heading-secondary {
+    height: 4.5rem;
+  }
+
+  .lady {
+    width: 30rem;
+    top: 15rem;
+  }
+
+  .main {
+    width: 100%;
+    height: 50rem;
+  }
+
+  .content-frame {
+    height: 50rem;
+  }
+
+  .link-row {
+    max-width: 80rem;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .lady {
     left: -5rem;
-    top: 15rem;
+    top: 10rem;
   }
 } 
 
 @media only screen and (max-width: 1023px) {
   .lady {
     left: -10rem;
-    top: 18rem;
+    top: 15rem;
   }
 } 
 
