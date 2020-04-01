@@ -15,7 +15,7 @@ body {
 
 .container {
   max-width: 144rem;
-  min-height: 100vh;
+  max-height: 96rem;
   margin: 0 auto;
   background-image: url('../img/background-large.png');
   background-size: cover;
@@ -58,7 +58,7 @@ body {
 .main {
   margin: 0 auto;
   width: 100%;
-  /* height: 50%; */
+  height: 47rem;
   position: relative;
   background: url('../img/content-background.png');
   background-position: center;
@@ -91,6 +91,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: .5rem auto;
+  max-width: 70rem;
   height: 5rem;
 }
 
@@ -142,7 +143,6 @@ body {
 
 .copyright {
   width: 30%;
-  margin-top: 8rem;
 }
 
 .popup {
@@ -157,8 +157,8 @@ body {
 }
 
 .popup-content {
-  width: 45rem;
-  height: 48rem;
+  width: 60rem;
+  height: 65rem;
   background: url(../img/popup.png);
   background-position: center;
   background-size: cover;
@@ -176,25 +176,25 @@ body {
   top: 18%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 2.8rem;
+  font-size: 3rem;
   color: red;
 }
 
 .close-btn,
 .open-btn {
   position: absolute;
-  bottom: 3.5rem;
-  height: 4.5rem;
-  width: 15rem;
+  bottom: 5rem;
+  height: 5rem;
+  width: 20rem;
   z-index: 500;
 }
 
 .close-btn {
-  left: 4rem;
+  left: 5rem;
 }
 
 .open-btn {
-  right: 4rem;
+  right: 5rem;
 }
 
 .close-btn,
@@ -204,40 +204,40 @@ body {
 
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .container {
-    max-width: 100%;
+    max-width: 95%;
   }
 
   .container-inside {
     max-width: 70%;
   }
 
-  .heading-primary{
+  .heading-primary {
     margin-top: 10rem;
   }
 
   .heading-secondary {
-    height: 4rem; 
+    height: 4.5rem;
   }
 
   .lady {
-    left: -6rem;
-    top: 20rem;
-  }
-
-  .content-frame {
-    height: 115%;
+    width: 30rem;
+    top: 15rem;
   }
 
   .main {
+    width: 100%;
+    height: 50rem;
+  }
 
+  .content-frame {
+    height: 50rem;
   }
 
   .link-row {
-
+    max-width: 80rem;
   }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -306,6 +306,10 @@ body {
   .main {
     height: 47rem;
     background-size: 95% 83%;
+  }
+
+  .content-frame {
+    height: 46rem;
   }
 
   .main-content {
