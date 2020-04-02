@@ -7,18 +7,17 @@ $(function () {
   })
 
   $(".bookmark-link-btn").click(function () {
-    console.log($(this).attr('url'))
     if (document.all) {
       try {
-        window.external.addFavorite($(this).attr('url'), '开元棋牌SVIP版');
+        window.external.addFavorite($(this).attr('url'), '开元棋牌');
       } catch (e) {
         const errorMessage = window.screen.width < 480 ? 
           '抱歉，您所使用的浏览器无法完成此操作。\n请您手动添加收藏' : 
           '抱歉，您所使用的浏览器无法完成此操作。\n加入收藏失败，请使用Ctrl + D进行添加';
         alert(errorMessage);
       }
-    } else if (window.sidebar) {
-      window.sidebar.addPanel('开元棋牌SVIP版', $(this).attr('url'), "");
+    } else if (window.sidebar && window.sidebar.addPanel) {
+      window.sidebar.addPanel('开元棋牌', $(this).attr('url'), "");
     } else {
       const errorMessage = window.screen.width < 480 ?
         '抱歉，您所使用的浏览器无法完成此操作。\n请您手动添加收藏' :
